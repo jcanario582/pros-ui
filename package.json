@@ -1,0 +1,48 @@
+{
+  "name": "@feature/pros-ui",
+  "description": "product recommendation",
+  "version": "3.45.0",
+  "repository": {
+    "type": "git",
+    "url": "git@code.devops.fds.com:polaris/feature/pros-ui.git"
+  },
+  "config": {
+    "environment": [
+      {
+        "name": "PRODUCT_XAPI_HOST",
+        "local": {
+          "bcom": "http://dipx-bcom-044.tbe.zeus.fds.com:8080"
+        },
+        "prod": {
+          "bcom": "__PRODUCT_XAPI_HOST__"
+        }
+      },
+      {
+        "name": "RTO_HOST",
+        "local": {
+          "bcom": "https://www.bcom-044.tbe.zeus.fds.com"
+        },
+        "prod": {
+          "bcom": "__RTO_HOST__"
+        }
+      }
+    ],
+    "macysCliVersion": "1.403.21"
+  },
+  "engines": {
+    "node": "8.x",
+    "npm": "5.x"
+  },
+  "main": "src/pros-ui.js",
+  "devDependencies": {
+    "@core/dev-server": "^1.83.4",
+    "@core/server": "^1.67.0",
+    "lodash": "^4.17.15"
+  },
+  "dependencies": {
+    "@component/common": "^1.288.0",
+    "@component/experiment": "^0.16.0",
+    "@feature/product-carousel-ui": "^3.28.0",
+    "lodash.get": "^4.1.0"
+  }
+}

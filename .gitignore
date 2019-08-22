@@ -1,0 +1,12 @@
+.git
+.idea
+*.swp
+.DS_Store
+.vscode
+
+index.hbs
+
+/envconfigs
+/node_modules
+/npm-debug.log
+/dist

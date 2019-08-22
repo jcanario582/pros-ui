@@ -1,0 +1,12 @@
+{{!--
+This file is used by the server-side renderer on every page request.
+It will render with the context set server-side by req.locals.context.
+Since this is a feature, this file is never used in a production environment, and is never published to npm.
+The javascript for the application will execute after this initial DOM has been rendered.
+--}}
+
+<div id="pros-ui-demo-container">
+    {{> demo/prosUIDemo}}
+</div>
+
+{{> localCoremetrics}}
